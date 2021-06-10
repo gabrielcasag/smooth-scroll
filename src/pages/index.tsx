@@ -4,6 +4,7 @@ import { StaticRouter as Router } from 'react-router-dom';
 
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import HeroSection from '@/components/HeroSection';
 
 const Home: React.FC = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
 
       <Navbar toggle={toggleSidebar} />
       <Sidebar isSidebarOpen={isSidebarOpen} toggle={toggleSidebar} />
+      <HeroSection />
     </Router>
   );
 };
