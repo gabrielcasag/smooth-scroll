@@ -3,13 +3,17 @@ import { FaBars } from 'react-icons/fa';
 
 import * as S from './styles';
 
-const Navbar: React.FC = () => (
+interface INavbarProps {
+  toggle: () => void;
+}
+
+const Navbar: React.FC<INavbarProps> = ({ toggle }) => (
   <>
     <S.Nav>
       <S.NavbarContainer>
         <S.NavLogo to="/">dolla</S.NavLogo>
 
-        <S.MobileIcon>
+        <S.MobileIcon onClick={toggle}>
           <FaBars />
         </S.MobileIcon>
 
