@@ -45,10 +45,10 @@ const InfoSection: React.FC<IInfoSectionProps> = ({
             <S.BtnWrapper>
               <Button
                 to="/"
+                // activeClass="active"
+                spy
                 smooth
                 duration={500}
-                spy
-                // exact="true"
                 offset={-80}
                 primary={!!primary}
                 dark={!!dark}

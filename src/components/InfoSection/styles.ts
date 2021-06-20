@@ -7,6 +7,7 @@ interface IInfoContainerProps {
 export const InfoContainer = styled.div<IInfoContainerProps>`
   color: #fff;
   background: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
+  height: 100vh;
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
