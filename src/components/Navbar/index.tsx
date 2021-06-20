@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Link from 'next/link';
+
 import { FaBars } from 'react-icons/fa';
 
 import * as S from './styles';
@@ -7,36 +9,56 @@ interface INavbarProps {
   toggle: () => void;
 }
 
-const Navbar: React.FC<INavbarProps> = ({ toggle }) => (
-  <>
-    <S.Nav>
-      <S.NavbarContainer>
-        <S.NavLogo to="/">dolla</S.NavLogo>
+const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
 
-        <S.MobileIcon onClick={toggle}>
-          <FaBars />
-        </S.MobileIcon>
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+      return;
+    }
+    setScrollNav(false);
+  };
 
-        <S.NavMenu>
-          <S.NavItem>
-            <S.NavLinks to="about">About</S.NavLinks>
-          </S.NavItem>
-          <S.NavItem>
-            <S.NavLinks to="discover">Discover</S.NavLinks>
-          </S.NavItem>
-          <S.NavItem>
-            <S.NavLinks to="services">Services</S.NavLinks>
-          </S.NavItem>
-          <S.NavItem>
-            <S.NavLinks to="signup">Sing Up</S.NavLinks>
-          </S.NavItem>
-        </S.NavMenu>
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
 
-        <S.NavBtn>
-          <S.NavBtnLink to="/signin">Sign In</S.NavBtnLink>
-        </S.NavBtn>
-      </S.NavbarContainer>
-    </S.Nav>
-  </>
-);
+  return (
+    <>
+      <S.Nav scrollNav={scrollNav}>
+        <S.NavbarContainer>
+          <Link href="/">
+            <S.NavLogo>dolla</S.NavLogo>
+          </Link>
+
+          <S.MobileIcon onClick={toggle}>
+            <FaBars />
+          </S.MobileIcon>
+
+          <S.NavMenu>
+            <S.NavItem>
+              <S.NavLinks to="about">About</S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks to="discover">Discover</S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks to="services">Services</S.NavLinks>
+            </S.NavItem>
+            <S.NavItem>
+              <S.NavLinks to="signup">Sing Up</S.NavLinks>
+            </S.NavItem>
+          </S.NavMenu>
+
+          <S.NavBtn>
+            <Link href="/signin">
+              <S.NavBtnLink>Sign In</S.NavBtnLink>
+            </Link>
+          </S.NavBtn>
+        </S.NavbarContainer>
+      </S.Nav>
+    </>
+  );
+};
 export default Navbar;

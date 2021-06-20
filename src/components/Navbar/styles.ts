@@ -1,9 +1,12 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
-export const Nav = styled.nav`
-  background: #000;
+interface INavProps {
+  scrollNav: boolean;
+}
+
+export const Nav = styled.nav<INavProps>`
+  background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   margin-top: -80px;
 
@@ -35,7 +38,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.a`
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -106,7 +109,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled(LinkR)`
+export const NavBtnLink = styled.button`
   border-radius: 50px;
   background: #01bf71;
   font-size: 1rem;

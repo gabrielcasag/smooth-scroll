@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import * as S from './styles';
 
@@ -23,7 +24,9 @@ const Sidebar: React.FC<ISidebarProps> = ({ toggle, isSidebarOpen }) => (
     </S.SidebarWrapper>
 
     <S.SidebarBtnWrapper>
-      <S.SidebarBtn to="/signin">Sign In</S.SidebarBtn>
+      <Link href="/signin">
+        <S.SidebarBtn>Sign In</S.SidebarBtn>
+      </Link>
     </S.SidebarBtnWrapper>
   </S.SidebarContainer>
 );
