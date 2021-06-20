@@ -33,7 +33,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
             spy
             smooth
             offset={-80}
-            duration={1000}
+            duration={800}
           >
             dolla
           </S.NavLogo>
@@ -49,7 +49,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
                 spy
                 smooth
                 offset={-80}
-                duration={1000}
+                duration={800}
                 activeClass='active'
               >
                 About
@@ -61,7 +61,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
                 spy
                 smooth
                 offset={-80}
-                duration={1000}
+                duration={800}
                 activeClass='active'
               >
                 Discover
@@ -73,7 +73,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
                 spy
                 smooth
                 offset={-80}
-                duration={1000}
+                duration={800}
                 activeClass='active'
               >
                 Services
@@ -85,7 +85,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
                 spy
                 smooth
                 offset={-80}
-                duration={1000}
+                duration={800}
                 activeClass='active'
               >
                 Sing Up

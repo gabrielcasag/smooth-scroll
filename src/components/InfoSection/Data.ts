@@ -1,4 +1,4 @@
-const aboutSection = {
+export const aboutSection = {
   id: 'about',
   lightBg: true,
   lightText: false,
@@ -16,7 +16,7 @@ const aboutSection = {
   darkText: true,
 };
 
-const discoverSection = {
+export const discoverSection = {
   id: 'discover',
   lightBg: false,
   lightText: true,
@@ -34,7 +34,7 @@ const discoverSection = {
   darkText: false,
 };
 
-const signupSection = {
+export const signupSection = {
   id: 'signup',
   lightBg: true,
   lightText: false,
