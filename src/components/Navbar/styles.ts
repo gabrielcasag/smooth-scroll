@@ -38,7 +38,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
 `;
 
-export const NavLogo = styled.a`
+export const NavLogo = styled(LinkS)`
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { FaGreaterThan, FaArrowRight } from 'react-icons/fa';
 import { Button } from '../ButtonElement';
 
 import * as S from './styles';
@@ -12,7 +11,7 @@ const HeroSection: React.FC = () => {
   };
 
   return (
-    <S.HeroContainer>
+    <S.HeroContainer id="hero">
       <S.HeroBg>
         <S.VideoBg autoPlay loop muted src="/video.mp4" />
       </S.HeroBg>

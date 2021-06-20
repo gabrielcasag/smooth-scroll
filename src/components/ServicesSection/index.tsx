@@ -10,17 +10,17 @@ const ServicesSection: React.FC = () => (
 
     <S.Wrapper>
       <ServicesCard
-        imgSrc="/logo.svg"
+        imgSrc="/premium-benefits.svg"
         title="Titulo"
         phrase="Testando o componente Service Card"
       />
       <ServicesCard
-        imgSrc="/logo.svg"
+        imgSrc="/reduce-expenses.svg"
         title="Titulo"
         phrase="Testando o componente Service Card"
       />
       <ServicesCard
-        imgSrc="/logo.svg"
+        imgSrc="/virtual-offices.svg"
         title="Titulo"
         phrase="Testando o componente Service Card"
       />

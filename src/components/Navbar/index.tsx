@@ -28,9 +28,15 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
     <>
       <S.Nav scrollNav={scrollNav}>
         <S.NavbarContainer>
-          <Link href="/">
-            <S.NavLogo>dolla</S.NavLogo>
-          </Link>
+          <S.NavLogo
+            to='hero'
+            spy
+            smooth
+            offset={-80}
+            duration={1000}
+          >
+            dolla
+          </S.NavLogo>
 
           <S.MobileIcon onClick={toggle}>
             <FaBars />
@@ -38,16 +44,52 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
 
           <S.NavMenu>
             <S.NavItem>
-              <S.NavLinks to="about">About</S.NavLinks>
+              <S.NavLinks
+                to='about'
+                spy
+                smooth
+                offset={-80}
+                duration={1000}
+                activeClass='active'
+              >
+                About
+              </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
-              <S.NavLinks to="discover">Discover</S.NavLinks>
+              <S.NavLinks
+                to='discover'
+                spy
+                smooth
+                offset={-80}
+                duration={1000}
+                activeClass='active'
+              >
+                Discover
+              </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
-              <S.NavLinks to="services">Services</S.NavLinks>
+              <S.NavLinks
+                to='services'
+                spy
+                smooth
+                offset={-80}
+                duration={1000}
+                activeClass='active'
+              >
+                Services
+              </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
-              <S.NavLinks to="signup">Sing Up</S.NavLinks>
+              <S.NavLinks
+                to='signup'
+                spy
+                smooth
+                offset={-80}
+                duration={1000}
+                activeClass='active'
+              >
+                Sing Up
+              </S.NavLinks>
             </S.NavItem>
           </S.NavMenu>
 
