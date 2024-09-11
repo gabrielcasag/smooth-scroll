@@ -18,10 +18,10 @@ const HeroSection: React.FC = () => {
 
       <S.HeroContent>
         <h1>Virtual Banking Made Easy</h1>
-        <p>
+        <span>
           Sign up for a new account today and receive 250 dol in credit towards
           your next payment.
-        </p>
+        </span>
 
         <S.BtnWrapper onMouseEnter={handleHover} onMouseLeave={handleHover}>
           <Button to="signup" primary>

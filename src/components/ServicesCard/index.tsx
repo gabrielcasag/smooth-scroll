@@ -16,7 +16,7 @@ const ServicesCard: React.FC<IServicesCardProps> = ({
   <S.ServicesCard>
     <S.ServicesIcon src={imgSrc} />
     <h2>{title}</h2>
-    <p>{phrase}</p>
+    <span>{phrase}</span>
   </S.ServicesCard>
 );
 

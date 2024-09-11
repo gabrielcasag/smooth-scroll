@@ -21,8 +21,8 @@ export const SidebarContainer = styled.aside<ISidebarProps>`
   transition: 0.3s ease-in-out;
   z-index: 99;
 
-  opacity: ${({ isOpen: isOpen }) => (isOpen ? '100%' : '0')};
-  top: ${({ isOpen: isOpen }) => (isOpen ? '0' : '-100%')};
+  opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+  top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const Icon = styled.button`

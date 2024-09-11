@@ -28,13 +28,7 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
     <>
       <S.Nav scrollNav={scrollNav}>
         <S.NavbarContainer>
-          <S.NavLogo
-            to='hero'
-            spy
-            smooth
-            offset={-80}
-            duration={800}
-          >
+          <S.NavLogo to="hero" spy smooth offset={-80} duration={800}>
             dolla
           </S.NavLogo>
 
@@ -45,48 +39,48 @@ const Navbar: React.FC<INavbarProps> = ({ toggle }) => {
           <S.NavMenu>
             <S.NavItem>
               <S.NavLinks
-                to='about'
+                to="about"
                 spy
                 smooth
                 offset={-80}
                 duration={800}
-                activeClass='active'
+                activeClass="active"
               >
                 About
               </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
               <S.NavLinks
-                to='discover'
+                to="discover"
                 spy
                 smooth
                 offset={-80}
                 duration={800}
-                activeClass='active'
+                activeClass="active"
               >
                 Discover
               </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
               <S.NavLinks
-                to='services'
+                to="services"
                 spy
                 smooth
                 offset={-80}
                 duration={800}
-                activeClass='active'
+                activeClass="active"
               >
                 Services
               </S.NavLinks>
             </S.NavItem>
             <S.NavItem>
               <S.NavLinks
-                to='signup'
+                to="signup"
                 spy
                 smooth
                 offset={-80}
                 duration={800}
-                activeClass='active'
+                activeClass="active"
               >
                 Sing Up
               </S.NavLinks>

@@ -18,7 +18,7 @@ export const ServicesCard = styled.div`
     margin-bottom: 0.8rem;
   }
 
-  > p {
+  > span {
     font-size: 1rem;
     text-align: center;
   }

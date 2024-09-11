@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaTwitter, FaGithub} from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 import Link from 'next/link';
 
 import * as S from './styles';
@@ -20,26 +20,26 @@ const Footer: React.FC = () => (
       </S.LinksContainer>
       <S.SocialMedia>
         <S.SocialMediaWrap>
-          <Link href='/'>
+          <Link href="/">
             <S.SocialLogo>dolla</S.SocialLogo>
           </Link>
           <S.WebsiteRights>
             dolla © {new Date().getFullYear()}
-            <p>All rights reserved.</p>
+            <span>All rights reserved.</span>
           </S.WebsiteRights>
 
-        <S.SocialIcons>
-            <S.SocialIconLink href="/" target="_blank" aria-label="Facebook" >
-              <FaFacebook/>
+          <S.SocialIcons>
+            <S.SocialIconLink href="/" target="_blank" aria-label="Facebook">
+              <FaFacebook />
             </S.SocialIconLink>
-            <S.SocialIconLink href="/" target="_blank" aria-label="Instagram" >
-              <FaInstagram/>
+            <S.SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <FaInstagram />
             </S.SocialIconLink>
-            <S.SocialIconLink href="/" target="_blank" aria-label="Twitter" >
-              <FaTwitter/>
+            <S.SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              <FaTwitter />
             </S.SocialIconLink>
-            <S.SocialIconLink href="/" target="_blank" aria-label="Twitter" >
-              <FaGithub/>
+            <S.SocialIconLink href="/" target="_blank" aria-label="Twitter">
+              <FaGithub />
             </S.SocialIconLink>
           </S.SocialIcons>
         </S.SocialMediaWrap>
