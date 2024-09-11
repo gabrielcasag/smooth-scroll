@@ -12,7 +12,12 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "react",
+    "react-hooks",
+    "@typescript-eslint",
+    "prettier"
+  ],
   "extends": [
     "airbnb",
     "airbnb/hooks",
@@ -23,21 +28,40 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
+    "plugin:@next/next/recommended",
     "prettier"
   ],
   "rules": {
     "prettier/prettier": "error",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-    "react/jsx-props-no-spreading": ["error", { "custom": "ignore" }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "custom": "ignore"
+      }
+    ],
     "react/no-unescaped-entities": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "jsx-a11y/anchor-is-valid": "off",
     "prefer-const": "off",
     "no-use-before-define": "off",
-    "import/no-cycle": [0, { "ignoreExternal": true }],
+    "import/no-cycle": [
+      0,
+      {
+        "ignoreExternal": true
+      }
+    ],
     "import/prefer-default-export": "off",
     "import/extensions": [
       "error",
@@ -57,9 +81,18 @@
         "directory": "."
       },
       "node": {
-        "moduleDirectory": ["node_modules"],
-        "extensions": [".js", ".jsx", ".ts", ".tsx"],
-        "paths": ["src"]
+        "moduleDirectory": [
+          "node_modules"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ],
+        "paths": [
+          "src"
+        ]
       }
     }
   }
