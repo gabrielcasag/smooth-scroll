@@ -76,7 +76,7 @@ export const SidebarBtnWrapper = styled.div`
   justify-content: center;
 `;
 
-export const SidebarBtn = styled.button`
+export const SidebarBtn = styled.span`
   border-radius: 50px;
   background: #01bf71;
   font-size: 1.3rem;

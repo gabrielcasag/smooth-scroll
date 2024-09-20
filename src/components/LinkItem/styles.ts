@@ -24,7 +24,7 @@ export const LinkTitle = styled.h1`
   margin-bottom: 1.5rem;
 `;
 
-export const Link = styled.a`
+export const Link = styled.span`
   color: #fff;
   text-decoration: none;
   margin-bottom: 1rem;
