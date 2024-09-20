@@ -109,7 +109,7 @@ export const NavBtn = styled.nav`
   }
 `;
 
-export const NavBtnLink = styled.button`
+export const NavBtnLink = styled.span`
   border-radius: 50px;
   background: #01bf71;
   font-size: 1rem;
